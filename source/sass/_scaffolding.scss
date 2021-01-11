@@ -1,0 +1,72 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: 'h-md';
+    font-size: 16px;
+    color: $tx-primary;
+    // max-width: 1440px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    line-height: 1.25;
+    font-family: "hn-b";
+}
+
+h3 {
+    font-size: 1.625em;
+    font-family: "hn-b";
+    line-height: normal;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4375;
+}
+
+.wrapper {
+    // outline: 1px dashed grey;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+
+@media(max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+}
+
+// Доступное скрытие элементов
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

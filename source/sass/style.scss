@@ -1,0 +1,42 @@
+@import "node_modules/normalize.scss/normalize.scss";
+
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "scaffolding.scss";
+@import "common.scss";
+
+@import "blocks/button.scss";
+@import "blocks/overlay.scss";
+
+// Home page
+@import "blocks/promo1.scss";
+@import "blocks/banner.scss";
+@import "blocks/pre-content.scss";
+@import "blocks/features.scss";
+
+// About us page
+@import "blocks/promo2.scss";
+@import "blocks/about-picture.scss";
+@import "blocks/services.scss";
+
+// Products page
+@import "blocks/cards.scss";
+
+// Work page
+@import "blocks/assurance.scss";
+@import "blocks/care.scss";
+@import "blocks/banner-contact.scss";
+
+// Contact page
+@import "blocks/contact.scss";
+@import "blocks/form.scss";
+
+// Template partials
+@import "blocks/nav.scss";
+@import "blocks/footer.scss";
+
+
+
+
+

@@ -1,0 +1,37 @@
+.promo1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/raster/home-promo.png');
+
+    &__wrapper{
+        padding-top: 145px;
+        padding-bottom: 140px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media (max-width:768px) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+
+    &__header{
+        margin: 0;
+        font-size: 70px;
+        line-height: 75px;
+        max-width: 700px;
+        color: $br-white;
+
+        @media (max-width:768px) {
+            font-size: 61.5px;
+            line-height: 65px;
+            max-width: 500px;
+        }
+
+        @media (max-width:425px) {
+            font-size: 54px;
+            line-height: 56px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.banner {
+    background-color: $tx-primary;
+    color: $br-white;
+    background-image: url("../img/vector/banner-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    text-align: center;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    background-repeat: repeat-y;
+
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+    @media (max-width:768px) {
+        background-position: 70% bottom;
+        padding-top: 100px;
+    }
+
+    &__header {
+        text-transform: none;
+        max-width: 620px;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+
+    &__button{
+        background-color: transparent;
+        border-color: transparent;
+        color: $br-white;
+        font-size: 13px;
+        padding-top: 11px;
+        margin-top: 15px;
+        padding-right: 50px;
+        position: relative;
+        
+        &::before{
+            display: block;
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 15px;
+            top: 50%;
+            right: 23px;
+            transform: translate(0, -50%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../img/vector/arrow-white.svg');
+
+        }
+
+        &:hover{
+            background-color: $br-white;
+            border-color: $tx-black;
+            opacity: 1;
+            color: $tx-primary;
+
+            &::before{
+                filter: invert(1);
+            }
+        }
+
+        &:active{
+            opacity: 0.8;
+        }
+
+        @media (max-width:525px) {
+            min-width: 130px;
+            padding-top: 12px;
+            padding-bottom: 9px;
+
+            line-height: 1.5em;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+    }
+
+}

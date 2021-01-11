@@ -1,0 +1,79 @@
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    transition: 0.3s all;
+
+    &--speaker {
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 30;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    //box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+    overflow-y: auto;
+    //max-width: calc(100vh - 40px);
+    //overflow-y: auto;
+}
+
+.modal.active {
+    //animation: modalOpen .4s ease;
+    opacity: 1;
+    visibility: visible;
+
+
+    @keyframes modalOpen {
+        from{
+            transform: translate(-60%, -60%);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        to{
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.modal__cross {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+
+    &:hover {
+        fill: $br-green;
+        transform: scale(1.2);
+    }
+    &:active {
+        fill: darken($br-green, 20%);
+        transform: scale(0.9);
+    }
+}

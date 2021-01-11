@@ -1,0 +1,34 @@
+// Brands common settings
+
+.br-header{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.br-text{
+    margin-bottom: 24px;
+}
+
+.br-promo{
+    overflow: hidden;
+}
+
+[data-aos="appear"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+}
+
+[data-aos="wave"] {
+    transform: scaleY(1.2);
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+        transform: scaleY(1);
+    }
+
+}
