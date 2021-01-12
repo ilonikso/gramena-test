@@ -472,7 +472,7 @@ p {
   display: inline-block;
   border-radius: 100px;
   padding-top: 11px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -487,7 +487,28 @@ p {
     opacity: 0.6;
     transform: scale(0.98); }
   .button--shadow {
-    box-shadow: -4px 4px 0px #436052; }
+    box-shadow: -4px 4px 0px #436052;
+    transform: translate(4px, -4px); }
+    .button--shadow:hover {
+      transform: translate(0, 0);
+      box-shadow: 0px 0px 0px #436052;
+      opacity: 1; }
+    .button--shadow:active {
+      opacity: 0.7;
+      transform: scale(0.98); }
+  .button--delay-show {
+    animation: showButton 2s ease; }
+
+@keyframes showButton {
+  0% {
+    opacity: 0;
+    transform: translate(10px, -10px); }
+  50% {
+    opacity: 0;
+    transform: translate(10px, -10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0 0); } }
 
 .overlay {
   opacity: 0;
@@ -838,6 +859,7 @@ p {
       font-size: 14px;
       min-width: 138px;
       padding: 10px 20px 11px;
+      padding-bottom: 10px;
       margin-top: 10px; }
       @media (max-width: 525px) {
         .features__item-button {
@@ -938,7 +960,8 @@ p {
     font-size: 0.875em;
     min-width: 155px;
     padding-top: 10px;
-    padding-bottom: 11px; }
+    padding-bottom: 11px;
+    padding-bottom: 10px; }
     @media (max-width: 525px) {
       .promo2__button {
         min-width: 130px;
@@ -1087,7 +1110,7 @@ p {
       margin-bottom: 60px; } }
 
 .services__item {
-  width: 26.5%;
+  width: calc(26.4%);
   box-sizing: border-box;
   border-right: 1px solid #BCBCBC;
   padding-left: 22px;
@@ -1098,7 +1121,7 @@ p {
   padding-bottom: 140px; }
   .services__item:nth-child(1) {
     padding-left: 0;
-    width: 23.5%; }
+    width: calc(23.6%); }
     @media (max-width: 1024px) {
       .services__item:nth-child(1) {
         padding-bottom: 35px;
@@ -1116,7 +1139,7 @@ p {
       padding-left: 0;
       padding-bottom: 35px; } }
   .services__item:nth-child(4) {
-    width: 23.5%;
+    width: 23.6%;
     padding-right: 10px; }
     @media (max-width: 425px) {
       .services__item:nth-child(4) {
@@ -1788,7 +1811,10 @@ p {
 
 .nav__logo {
   align-self: center;
-  margin-left: 10px; }
+  margin-left: 10px;
+  max-width: 116px; }
+  .nav__logo img {
+    width: 100%; }
 
 .nav__menu {
   display: flex;
@@ -2011,6 +2037,8 @@ p {
       justify-content: center; }
       .footer__logo-item:nth-child(1) {
         width: 100%;
+        max-width: 116px;
+        margin: 0 auto;
         margin-bottom: 25px; }
     @media (max-width: 768px) {
       .footer__logo {
