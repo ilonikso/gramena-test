@@ -799,7 +799,7 @@ p {
         padding-bottom: 30px; } }
     .features__item:nth-child(1) {
       order: 1;
-      background-image: url("../img/raster/features-1.png"); }
+      background-image: url("../img/raster/features-1.jpg"); }
       @media (max-width: 768px) {
         .features__item:nth-child(1) {
           min-height: 300px; } }
